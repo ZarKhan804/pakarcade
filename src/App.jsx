@@ -7,7 +7,6 @@ import Footer from "./Components/Footer";
 import Home from "./Home/Home";
 import About from "./About/About";
 import Blog from "./Blog/Blog";
-import Download from "./Download/Download";
 import Contact from "./Contact/Contact";
 
 /* ================= SCROLL TO TOP ================= */
@@ -47,7 +46,7 @@ const App = () => {
 
             <Route path="/blog" element={<Blog />} />
 
-            <Route path="/download" element={<Download />} />
+          
 
             <Route path="/contact" element={<Contact />} />
           </Routes>
