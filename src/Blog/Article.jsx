@@ -1,11 +1,12 @@
+
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Article = () => {
   return (
     <section className="border-t border-gray-300 bg-gray-200 py-20 sm:py-24">
       <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
 
-        {/* ================= MAIN ARTICLE ================= */}
         <div className="mx-auto max-w-5xl">
 
           <div className="text-center">
@@ -21,7 +22,7 @@ const Article = () => {
             </h2>
           </div>
 
-          <div className="mt-10 rounded-3xl border border-gray-300 bg-white/60 p-7 shadow-sm sm:p-10 lg:p-12">
+          <article className="mt-10">
 
             <p className="text-base leading-8 text-gray-600 sm:text-lg">
               Welcome to the Pak Arcade Blog, a place where gaming
@@ -29,9 +30,15 @@ const Article = () => {
               interesting stories and helpful tips. The world of online
               gaming continues to grow, and players are always looking for
               new ways to discover games and improve their overall gaming
-              experience. Pak Arcade brings together gaming information in a
-              simple and easy-to-understand format so visitors can explore
-              different topics without unnecessary complexity.
+              experience. You can also visit our{" "}
+              <Link
+                to="/"
+                className="font-semibold text-yellow-600 underline underline-offset-4 hover:text-yellow-700"
+              >
+                Pak Arcade home page
+              </Link>{" "}
+              to explore the main platform information and available
+              resources.
             </p>
 
             <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
@@ -40,9 +47,15 @@ const Article = () => {
               Whether you are interested in learning more about Pak Arcade
               or simply enjoy reading about the latest gaming trends, our
               articles are created to provide useful and engaging
-              information. We aim to make every article easy to read while
-              giving visitors information that can help them understand the
-              gaming world better.
+              information. Visitors who want to understand the platform
+              before exploring it can also read our{" "}
+              <Link
+                to="/about"
+                className="font-semibold text-yellow-600 underline underline-offset-4 hover:text-yellow-700"
+              >
+                About Pak Arcade page
+              </Link>
+              .
             </p>
 
             <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
@@ -72,38 +85,34 @@ const Article = () => {
               enjoy gaming and entertainment. From new game information to
               simple guides and gaming discussions, our content is designed
               to help visitors discover something interesting every time
-              they visit. We will continue developing helpful content around
-              Pak Arcade and the wider world of online and mobile gaming.
+              they visit. If you have a question or need additional
+              information, you can reach the{" "}
+              <Link
+                to="/contact"
+                className="font-semibold text-yellow-600 underline underline-offset-4 hover:text-yellow-700"
+              >
+                Pak Arcade Contact page
+              </Link>
+              .
             </p>
 
-          </div>
-
-        </div>
-
-        {/* ================= KEYWORDS ================= */}
-        <div className="mx-auto mt-12 max-w-5xl">
-
-          <div className="rounded-3xl border border-gray-300 bg-white/50 p-7 sm:p-10">
-
-            <h3 className="text-center text-2xl font-black text-gray-900 sm:text-3xl">
-              Pak Arcade Gaming Topics
-            </h3>
-
-            <p className="mt-6 text-center text-sm leading-7 text-gray-600 sm:text-base">
-              Pak Arcade, Pak Arcade Game, Pak Arcade Download, Pak Arcade
-              APK, Pak Arcade App, Pak Arcade Android, Pak Arcade Gaming,
-              Pak Arcade Games, online gaming, mobile gaming, gaming news,
-              gaming updates, game updates, new games, gaming tips, gaming
-              guides, arcade games, online games, mobile games, Android
-              gaming, gaming platform, gaming entertainment, latest gaming
-              news, exciting games, game information, gaming experience,
-              arcade gaming, digital entertainment, mobile game updates,
-              Pak Arcade latest updates, Pak Arcade gaming experience,
-              Pak Arcade mobile gaming, Pak Arcade game information,
-              PakArcade and gaming adventures.
+            <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
+              We will continue developing helpful content around Pak Arcade
+              and the wider world of online and mobile gaming. Our goal is
+              to keep information straightforward, readable and useful for
+              visitors who want to learn more about gaming topics. Explore
+              the{" "}
+              <Link
+                to="/"
+                className="font-semibold text-yellow-600 underline underline-offset-4 hover:text-yellow-700"
+              >
+                Pak Arcade website
+              </Link>{" "}
+              and use the navigation throughout the site to move between
+              related pages.
             </p>
 
-          </div>
+          </article>
 
         </div>
 
@@ -113,3 +122,4 @@ const Article = () => {
 };
 
 export default Article;
+

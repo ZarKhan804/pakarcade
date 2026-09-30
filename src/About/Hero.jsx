@@ -1,15 +1,15 @@
+
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gray-200">
-      {/* Background Glow */}
       <div className="pointer-events-none absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-yellow-300/20 blur-[120px]" />
 
-      {/* Main Container */}
       <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
 
-        {/* ================= HERO INTRO ================= */}
+        {/* INTRO */}
         <div className="mx-auto max-w-4xl text-center">
 
           <p className="text-sm font-bold uppercase tracking-[3px] text-yellow-600">
@@ -17,120 +17,127 @@ const Hero = () => {
           </p>
 
           <h1 className="mt-5 text-5xl font-black leading-tight tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
-            Welcome to{" "}
+            About{" "}
             <span className="text-yellow-500">
               Pak Arcade
             </span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 sm:text-lg">
-            Discover Pak Arcade, a simple and exciting place for players
-            who enjoy games, entertainment and new gaming experiences.
+            Learn more about Pak Arcade, its gaming content, mobile
+            experience, platform information and resources created for
+            visitors interested in online gaming and entertainment.
           </p>
 
         </div>
 
-        {/* ================= ABOUT ARTICLE ================= */}
+        {/* MAIN CONTENT */}
         <div className="mx-auto mt-16 max-w-5xl">
-
           <div className="rounded-3xl border border-gray-300 bg-white/60 p-7 shadow-sm backdrop-blur-sm sm:p-10 lg:p-12">
 
             <h2 className="text-center text-3xl font-black text-gray-900 sm:text-4xl">
-              About Pak Arcade
+              About the Pak Arcade Platform
             </h2>
 
             <p className="mt-7 text-base leading-8 text-gray-600 sm:text-lg">
-              Pak Arcade is a gaming platform created for players who enjoy
-              discovering entertaining games and spending their free time
-              with fun digital experiences. Our goal is to keep gaming simple,
-              accessible and easy to explore. Whether you are visiting Pak
-              Arcade for the first time or already know the platform, we want
-              to provide clear information and a comfortable experience for
-              every visitor.
+              Pak Arcade is an online gaming and entertainment destination
+              designed for visitors who want to discover gaming information,
+              explore content and learn more about different gaming
+              experiences. The website brings important information together
+              in a simple format so visitors can move between different
+              sections without unnecessary steps.
             </p>
 
             <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
-              The world of online gaming continues to grow as more people use
-              smartphones and other digital devices for entertainment. Pak
-              Arcade is designed with this modern gaming audience in mind.
-              Players can explore information about the platform, discover
-              gaming content and learn more about the available options from
-              one convenient place.
+              Visitors can start from the{" "}
+              <Link
+                to="/"
+                className="font-semibold text-yellow-600 hover:text-yellow-700"
+              >
+                Pak Arcade home page
+              </Link>{" "}
+              and continue through the website to explore additional
+              information. The navigation connects the main areas of the
+              website, including the{" "}
+              <Link
+                to="/blog"
+                className="font-semibold text-yellow-600 hover:text-yellow-700"
+              >
+                Pak Arcade blog
+              </Link>{" "}
+              and the{" "}
+              <Link
+                to="/contact"
+                className="font-semibold text-yellow-600 hover:text-yellow-700"
+              >
+                contact page
+              </Link>
+              .
             </p>
 
             <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
-              People searching for Pak Arcade, Pak Arcade Game, Pak Arcade
-              Download, Pak Arcade APK or Pak Arcade App may want to learn
-              more before getting started. That is why we believe useful,
-              straightforward information is an important part of a good
-              gaming website. Our pages are designed to help visitors
-              understand the platform without unnecessary complexity.
+              Modern gaming audiences use smartphones, tablets and desktop
+              computers to discover entertainment content. For that reason,
+              Pak Arcade focuses on a responsive layout that makes information
+              easier to read across different screen sizes. Clear headings,
+              readable text and straightforward navigation help visitors
+              understand the available information.
             </p>
 
             <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
-              Pak Arcade also focuses on a mobile-friendly experience.
-              Smartphones are now one of the most popular ways to access
-              online entertainment, so a responsive design can make gaming
-              information easier to view on different screen sizes. Whether
-              you are using a phone, tablet or desktop computer, simple
-              navigation and readable content can make your visit more
-              comfortable.
+              Visitors interested in Pak Arcade Game, Pak Arcade Download,
+              Pak Arcade APK or Pak Arcade App information can use the website
+              to explore relevant sections. Before downloading any application,
+              users should verify the source, understand device compatibility
+              and review applicable security requirements.
             </p>
 
             <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
-              We believe gaming should be enjoyable and approached
-              responsibly. Players should understand the rules of the games
-              they choose and should always consider their own limits. If
-              gaming involves real-money features, users should understand
-              the risks and follow the laws and age requirements that apply
-              to them. Gaming should remain an entertainment activity and
-              should never be viewed as a guaranteed way to make money.
+              Gaming should remain an entertainment activity. Users should
+              understand the rules of the games they choose and consider the
+              laws, age requirements and other restrictions that apply in
+              their location. Where gaming involves real-money features,
+              users should understand the risks and avoid treating gaming
+              outcomes as guaranteed financial returns.
             </p>
 
             <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
-              Our aim with Pak Arcade is to create a clean and useful online
-              destination where visitors can learn, explore and enjoy gaming
-              content. From information about the Pak Arcade Game to details
-              about Pak Arcade Download and mobile access, we want everything
-              to be presented in a simple and understandable way.
+              The purpose of this website is to make Pak Arcade information
+              easier to discover and navigate. Visitors can learn about the
+              platform, read gaming-related content and use the website's
+              main navigation to move between useful sections.
             </p>
 
           </div>
-
         </div>
 
-        {/* ================= BOTTOM INFO ================= */}
-        <div className="mx-auto mt-10 grid max-w-5xl gap-5 sm:grid-cols-3">
+        {/* TEXT LINKS - NOT CARDS */}
+        <div className="mx-auto mt-10 max-w-5xl border-t border-gray-300 pt-8">
 
-          <div className="rounded-2xl border border-gray-300 bg-white/60 p-6 text-center shadow-sm">
-            <h3 className="text-lg font-black text-gray-900">
-              Simple
-            </h3>
-
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              Easy navigation and clear information.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-gray-300 bg-white/60 p-6 text-center shadow-sm">
-            <h3 className="text-lg font-black text-gray-900">
-              Mobile Friendly
-            </h3>
-
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              Designed for comfortable access on different devices.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-gray-300 bg-white/60 p-6 text-center shadow-sm">
-            <h3 className="text-lg font-black text-gray-900">
-              Gaming & Fun
-            </h3>
-
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              Explore games and enjoy your gaming experience.
-            </p>
-          </div>
+          <p className="text-center text-sm leading-7 text-gray-600 sm:text-base">
+            Continue exploring{" "}
+            <Link
+              to="/"
+              className="font-semibold text-yellow-600 hover:text-yellow-700"
+            >
+              Pak Arcade Home
+            </Link>
+            , learn more through the{" "}
+            <Link
+              to="/blog"
+              className="font-semibold text-yellow-600 hover:text-yellow-700"
+            >
+              Pak Arcade Blog
+            </Link>
+            , or visit the{" "}
+            <Link
+              to="/contact"
+              className="font-semibold text-yellow-600 hover:text-yellow-700"
+            >
+              Contact page
+            </Link>{" "}
+            for additional information.
+          </p>
 
         </div>
 
@@ -140,3 +147,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
