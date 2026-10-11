@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet-async";
 import Hero from "./Hero";
 import Article from "./Article";
 import Keyword from "./Keyword";
+import Banner from "./Banner";
+import Article2 from "./Article2";
 
 const SITE_URL = "https://www.pakarcadeapp.com?code=GQE6ULRWFWG&t=1791705586";
 const PAGE_URL = `${SITE_URL}/`;
@@ -55,6 +57,8 @@ const Home = () => {
         <Hero />
         <Article />
         <Keyword />
+        <Banner/>
+        <Article2/>
       </main>
     </>
   );

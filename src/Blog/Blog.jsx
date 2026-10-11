@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Hero from "./Hero";
 import Article from "./Article";
 import Keyword from "./Keyword";
+import Article2 from "./Article2";
 
 const SITE_URL = "https://www.pakarcades.com";
 const PAGE_URL = `${SITE_URL}/blog`;
@@ -81,6 +82,7 @@ const Blog = () => {
         <Hero />
         <Article />
         <Keyword />
+        <Article2/>
       </main>
     </>
   );
