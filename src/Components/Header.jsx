@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   const downloadUrl =
-    "https://www.pakarcadeapp.com?code=MJ0D28WXAMD&t=1789636252";
+    "https://www.pakarcadeapp.com?code=GQE6ULRWFWG&t=1791705586";
 
   const closeMenu = () => {
     setMenuOpen(false);

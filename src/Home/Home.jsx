@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import Article from "./Article";
 import Keyword from "./Keyword";
 
-const SITE_URL = "https://www.pakarcades.com";
+const SITE_URL = "https://www.pakarcadeapp.com?code=GQE6ULRWFWG&t=1791705586";
 const PAGE_URL = `${SITE_URL}/`;
 
 const TITLE = "Pak Arcade Game – Online Gaming & Download";
